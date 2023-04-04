@@ -1,0 +1,45 @@
+body{
+  background-image: url(https://i.pinimg.com/236x/21/61/71/21617193e2228cdb8d7f69195b8850e7.jpg);
+  opacity: 10;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: 170px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-md-4 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 15px;
+}
+
+/*  */
+.card {
+  border: 1px solid #ddd;
+  transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+@media (max-width: 991.98px) {
+  .col-md-4 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .col-md-4 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
